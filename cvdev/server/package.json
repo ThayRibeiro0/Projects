@@ -5,7 +5,8 @@
   "main": "scr/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "docker-compose up & nodemon ./src/server"
+    "start": "docker-compose up & nodemon ./src/server",
+    "push": "npx prisma db push"
   },
   "keywords": [],
   "author": "",
