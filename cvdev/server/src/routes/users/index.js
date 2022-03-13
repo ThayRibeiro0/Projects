@@ -33,7 +33,7 @@ router.put("/:uuid", async (req, res) => {
     res.json(user);
 });
 
-app.delete("/:uuid", async (req, res) => {
+router.delete("/:uuid", async (req, res) => {
     const user = await db.user.delete({
         where: {
             uuid: req.params.uuid,
