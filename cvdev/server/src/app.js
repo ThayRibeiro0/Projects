@@ -1,7 +1,7 @@
 const express = require ('express')
 const app = express ();
-
 const db = require('../prisma');
+const users = require("./routes/users");
 
     app.get('/:email?', async (req, res) => {
 
@@ -17,5 +17,8 @@ const db = require('../prisma');
             res.json(user);
         }
     })
+
+    app.use(express.json());
+    app.use("/users", users);
 
     module.exports = { app };
