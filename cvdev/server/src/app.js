@@ -1,24 +1,23 @@
-const express = require ('express')
-const app = express ();
-const db = require('../prisma');
+console.clear()
+const express = require('express')
 const users = require("./routes/users");
+const { engine } = require('express-handlebars');
+const app = express();
 
-    app.get('/:email?', async (req, res) => {
+//css
+app.use(express.static(__dirname + '/public'))
 
-        if(req.params.email){
-            const user = await db.user.findFirst({
-                where: {
-                    email: req.params.email
-                }
-            });//find by email at url
-            res.json(user);
-        }else {
-            const user = await db.user.findMany(); //brings all users
-            res.json(user);
-        }
-    })
+//handlebars
+app.engine('hbs', engine({ defaultLayout: 'main.hbs' }));
+app.set('view engine', 'hbs');
+app.set('views', __dirname + '/views');
 
-    app.use(express.json());
-    app.use("/users", users);
+app.get('/', (req, res) => {
+    res.render('home');
+});
 
-    module.exports = { app };
+//rota users
+app.use(express.json());
+app.use("/users", users);
+
+module.exports = { app };

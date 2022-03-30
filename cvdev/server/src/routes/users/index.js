@@ -1,4 +1,6 @@
+//roteador do express - varias rotas
 const router = require("express").Router();
+//import db
 const db = require("../../../prisma");
 
 
@@ -17,7 +19,7 @@ router.get("/:uuid", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-    const user = await db.user.create ({
+    const user = await db.user.create({
         data: req.body,
     });
     res.json(user);
