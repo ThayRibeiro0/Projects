@@ -2,6 +2,22 @@ html, body{
     min-height: 100%;
 }
 
+style, table{
+    width: 50%;
+}
+
+style, td{
+    padding: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: antiquewhite;
+}
+ 
+style, table{
+    width: 50%;
+}
+
 body{
     font-size: 12px;
     line-height: 25px;
@@ -16,7 +32,7 @@ h1{
     font-size: 20px;
     margin: 0 0 5px;
     line-height: 75px;
-    color: rgb(145, 162, 180);
+    color: rgb(10, 57, 107);
 
 }
 
@@ -25,7 +41,7 @@ h2{
     font-size: 14px;
     margin: 10px 0px 10px 0px;
     line-height: 30px;
-    color: azure;
+    color: rgb(7, 58, 58);
 }
 
 .header{
