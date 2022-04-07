@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  dbwebcv:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: "cvdev"
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "qwerty123"
+    ports:
+      - "5432:5432"

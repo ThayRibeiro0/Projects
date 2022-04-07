@@ -1,0 +1,23 @@
+{
+  "name": "server-cvdev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "docker-compose up & nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^3.12.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.4"
+  },
+  "devDependencies": {
+    "prisma": "^3.12.0"
+  }
+}
