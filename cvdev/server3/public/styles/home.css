@@ -1,24 +1,44 @@
 .picture_profile img {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     border-radius: 50px;
+    margin: 30px;
+    margin-bottom: 12px;
 }
 
-.bold {
-    font-weight: 550;
+.corpo {
+    background-color: #333;
+    border-radius: 15px;
+    color: white;
+    height: 620px;
 }
 
-.icon {
-    padding: 5px;
-    font-size: 12px;
+.title {
+    text-align: center;
+    line-height: 10px;
 }
 
-.resume_list{
+.line {
+    border-width: 5px;
+    height: 10px;
+}
+
+.resume_list {
     padding: 0;
 }
 
-.resume_list li{
+.resume_list li {
     padding: 0px 15px;
     display: flex;
+    align-items: center;
 }
 
+.resume_list li i {
+    margin-right: 15px;
+    height: 10px;
+    width: 10px;
+}
+
+.resume_list li p {
+    margin: 7px;
+}

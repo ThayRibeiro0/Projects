@@ -10,27 +10,35 @@ body {
     background-color: #fafafa;
 }
 
-nav {
+.bold {
+    font-weight: 550;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.navega {
     background-color: blueviolet;
     color: aliceblue;
 }
 
-nav ul {
+.navega ul {
     list-style-type: none;
     margin: 0;
     overflow: hidden;
     background-color: #333;
 }
 
-nav ul li {
+.navega ul li {
     float: left;
 }
 
-nav ul li:nth-child(3) {
+.navega ul li:nth-child(3) {
     float: right;
 }
 
-nav ul li a {
+.navega ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -38,7 +46,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li:hover {
+.navega ul li:hover {
     background-color: #111;
 }
 
