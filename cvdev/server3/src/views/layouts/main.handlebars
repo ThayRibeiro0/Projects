@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando</title>
+    {{#each styleslist}}
+    <link rel="stylesheet" href="/styles/{{this}}" />
+    {{/each}}
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 <body>
-    {{{body}}}
+    <nav>
+        <ul>
+            <li>
+                <a href="#menu">
+                    menu
+                </a>
+            </li>
+            
+            <li>
+                <a>
+                    titulo
+                </a>
+            </li>
+
+            <li>
+                <a href="/login">
+                    login
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        {{{body}}}
+    </main>
 </body>
 </html>
