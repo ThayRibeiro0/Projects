@@ -11,7 +11,9 @@ console.log(styleslist)
 
 app.use(express.static('./public'))
 
-app.engine('handlebars', engine());
+app.engine('handlebars', engine({
+  partialsDir: "./src/views/components"
+}));
 app.set('view engine', 'handlebars');
 app.set('views', './src/views');
 

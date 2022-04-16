@@ -10,24 +10,17 @@ body {
     background-color: #fafafa;
 }
 
-.bold {
-    font-weight: 550;
-}
-
-.italic {
-    font-style: italic;
-}
-
 .navega {
-    background-color: blueviolet;
-    color: aliceblue;
+    background-color: transparent;
+    position: fixed;
+    top: 0%;
+    width: 100%;
 }
 
 .navega ul {
     list-style-type: none;
     margin: 0;
     overflow: hidden;
-    background-color: #333;
 }
 
 .navega ul li {
@@ -41,6 +34,7 @@ body {
 .navega ul li a {
     display: block;
     color: white;
+    font-weight: bold;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -50,34 +44,8 @@ body {
     background-color: #111;
 }
 
-.flexbox {
-    display: flex;
-    align-items: stretch;
-    min-height: calc(100vh -48px);
-}
-
-.flexitem {
-    display: flex;
-    height: auto;
-}
-
-.md-4 {
-    width: 30%;
-}
-
-.md-5 {
-    width: 40%;
-}
-
-.md-6 {
-    width: 50%;
-}
-
-.rounded {
-    margin: 4px;
-    padding: 8px;
-    border-color: #aaa;
+.teste {
+    border-color: red;
+    border-style: dashed;
     border-width: 1px;
-    border-style: solid;
-    border-radius: 2px;
 }

@@ -1,0 +1,62 @@
+<style>
+    .middle {
+        padding-top: 20%;
+    }
+
+    .hexagon {
+        width: 200px;
+        height: 96px;
+        background: red;
+        position: relative;
+        border-radius: 2% 3% 4% 3%;
+    }
+
+    .hexagon:before {
+        content: "";
+        position: absolute;
+        top: -44px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 99px solid transparent;
+        border-right: 99px solid transparent;
+        border-bottom: 45px solid red;
+        border-top: 100px;
+        border-radius: 100% 50% 3% 3%;
+    }
+
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        bottom: -44px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 99px solid transparent;
+        border-right: 99px solid transparent;
+        border-top: 45px solid red;
+        border-radius: 3% 3% 50% 100%;
+    }
+
+    .shape {
+        width: 0;
+        height: 0;
+        margin-top: 55px;
+        border-left: 100px solid white;
+        border-right: 100px solid white;
+        border-top: 100px solid transparent;
+    }
+
+</style>
+<div class="middle">
+    <div class="hexagon">
+        <figure class="teste pictureprofile">
+        </figure>
+    </div>
+    <div>
+        <div class="shape">
+
+        </div>
+    </div>
+</div>
+</div>
