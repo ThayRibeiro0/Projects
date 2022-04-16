@@ -31,7 +31,7 @@
 
 .resume_list li {
     padding: 0px 15px;
-    display: flex;
+    display: inline-block;
     align-items: center;
 }
 
@@ -44,6 +44,23 @@
 .resume_list li p {
     margin: 7px;
 }
+
+/* btn strech */
+
+.btn-strech {
+    width: 16px;
+    display: flex;
+    transition: all 300ms;
+    white-space: nowrap;
+    overflow: hidden;
+    align-items: center;
+}
+
+.btn-strech:hover {
+    overflow: visible;    
+}
+
+
 
 /* flexitem2 */
 
@@ -115,5 +132,7 @@
 }
 
 .objetivos {
-    text-align:justify;
+    box-sizing: border-box;
+    width: 300px;
+    text-align: justify;
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2family=Roboto&display=swap');
 
-*{
+* {
     list-style-type: none;
 }
 
@@ -50,29 +50,30 @@ body {
     background-color: #111;
 }
 
-@media (min-width: 933px){
-    .flexbox {
-        display: flex;
-        align-items: stretch;
-        min-height: calc(100vh -48px);
-    }
-    .flexitem {
-        display: flex;
-        height: auto;
-        width: 100%;
-    }
-    .md-4 {
-        width: 30%;
-    }
-    .md-5 {
-        width: 40%;
-    }
-    .md-6 {
-        width: 50%;
-    }
+.flexbox {
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh -48px);
 }
 
-.rounded{
+.flexitem {
+    display: flex;
+    height: auto;
+}
+
+.md-4 {
+    width: 30%;
+}
+
+.md-5 {
+    width: 40%;
+}
+
+.md-6 {
+    width: 50%;
+}
+
+.rounded {
     margin: 4px;
     padding: 8px;
     border-color: #aaa;
